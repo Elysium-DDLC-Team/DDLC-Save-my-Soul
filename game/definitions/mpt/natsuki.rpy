@@ -183,12 +183,19 @@ layeredimage natsuki turned:
     
     #This makes the sprite one single texture, instead of multiple textures on top of each other.
     #This fixes certain problems like alpha fadein/fadeout looking strange, at the cost of some performance.
-    at Flatten
+    at AutofocusDisplayable(name="monika", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     #Attributes for autofocus logic.
     group af_logic multiple:
         attribute afm null #This attribute controls whether automatic control of the mouths takes place or not.  Add this tag to a character to enable automatic mouth control, remove it to disable it.
         attribute afz null #This attribute controls whether automatic control of zorder takes place or not.  Add this tag to a character to enable automatic zorder control, remove it to disable it.
+        
+    group autofocus_coloring:
+        attribute day default null
+        attribute dawn null
+        attribute sunset null
+        attribute night null
+        attribute evening null
     
     group outfit:
         attribute uniform default null

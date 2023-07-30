@@ -5,7 +5,7 @@
 
 init 10:
     
-    transform tcommon(x=640, z=0.80):
+    transform tcommon(x=960, z=0.60):
         yanchor 1.0 subpixel True
         on show:
             ypos 1.03
@@ -20,25 +20,25 @@ init 10:
                 easein .15 yoffset 0 ypos 1.03
     
     transform t41:
-        tcommon(200)
+        tcommon(300)
     transform t42:
-        tcommon(493)
+        tcommon(740)
     transform t43:
-        tcommon(786)
+        tcommon(1179)
     transform t44:
-        tcommon(1080)
+        tcommon(1620)
     transform t31:
-        tcommon(240)
+        tcommon(360)
     transform t32:
-        tcommon(640)
+        tcommon(960)
     transform t33:
-        tcommon(1040)
+        common(1560)
     transform t21:
-        tcommon(400)
+        tcommon(600)
     transform t22:
-        tcommon(880)
+        tcommon(1320)
     transform t11:
-        tcommon(640)
+        tcommon(960)
     
     transform focus(x=640, z=0.80):
         yanchor 1.0 ypos 1.03 subpixel True
@@ -55,25 +55,26 @@ init 10:
                 easein .15 yoffset 0
     
     transform f41:
-        focus(200)
+        focus(300)
     transform f42:
-        focus(493)
+        focus(740)
     transform f43:
-        focus(786)
+        focus(1179)
     transform f44:
-        focus(1080)
+        focus(1620)
     transform f31:
-        focus(240)
+        focus(360)
     transform f32:
-        focus(640)
+        focus(960)
     transform f33:
-        focus(1040)
+        focus(1560)
     transform f21:
-        focus(400)
+        focus(600)
     transform f22:
-        focus(880)
+        focus(1320)
     transform f11:
-        focus(640)
+        focus(960)
+
     
     transform tinstant(x=640, z=0.80):
         xcenter x yoffset 0 zoom z*1.00 alpha 1.00 yanchor 1.0 ypos 1.03
