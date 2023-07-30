@@ -11,3 +11,4 @@ traceback.txt
 *.chr
 errors.txt
 game/saves/*
+game/cache/*

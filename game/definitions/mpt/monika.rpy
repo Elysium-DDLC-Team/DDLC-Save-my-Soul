@@ -3,11 +3,11 @@ image _mon_blink_a:
     renpy.random.randint(20, 100)*0.1
     choice:
         alpha 1.0
-        "mod_assets/MPT/monika/_blink_am.png"
+        "mod_assets/images/monika/blink/_blink_am.png"
         0.015
         paths.monika("eyes", "forward","e4a")
         0.035
-        "mod_assets/MPT/monika/_blink_am.png"
+        "mod_assets/images/monika/blink/_blink_am.png"
         0.015
     choice:
         alpha 1.0
