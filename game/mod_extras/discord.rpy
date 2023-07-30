@@ -46,7 +46,7 @@ init -950 python in discord:
             # Defines the text when a user hovers on the large icon in
             # a players' status.
             # Example: DDLC Mod Template
-            self.large_text  = "DDLC: World of Dreams"  # Uses the name of the mod defined in-game.
+            self.large_text  = "DDLC: Save my Soul"  # Uses the name of the mod defined in-game.
 
             # Defines the smallest image to use in rich presence as the
             # secondary icon.
