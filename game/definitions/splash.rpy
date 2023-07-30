@@ -194,12 +194,12 @@ transform menu_bg_move:
     topleft
     parallel:
         xoffset 0 yoffset 0
-        linear 3.0 xoffset -100 yoffset -100
+        linear 4.5 xoffset -150 yoffset -150
         repeat
     parallel:
         ypos 0
         time 0.65
-        ease_cubic 2.5 ypos -500
+        ease_cubic 3.75 ypos -750
 
 # This transform loops the polka-dot moving effect.
 transform menu_bg_loop:

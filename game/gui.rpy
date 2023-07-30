@@ -8,7 +8,7 @@
 
 init -2 python:
     # This sets the resolution of DDLC to 1280x720p
-    gui.init(1280, 720)
+    gui.init(1920, 1080)
 
 ## GUI Sounds
 # These variables set the sound effects for the GUI elements in the game.
@@ -60,22 +60,22 @@ define -2 gui.name_font = "gui/font/RifficFree-Bold.ttf"
 define -2 gui.interface_font = "gui/font/Aller_Rg.ttf"
 
 # The text size of normal dialogue text.
-define -2 gui.text_size = 24
+define -2 gui.text_size = 36
 
 # This determines the text size of character names.
-define -2 gui.name_text_size = 24
+define -2 gui.name_text_size = 36
 
 # This determines the text size of the game's user interface.
-define -2 gui.interface_text_size = 24
+define -2 gui.interface_text_size = 36
 
 # This determines the text size of the game's label in the user interface.
-define -2 gui.label_text_size = 28
+define -2 gui.label_text_size = 42
 
 # This determines the text size of the notification screen.
-define -2 gui.notify_text_size = 16
+define -2 gui.notify_text_size = 24
 
 # This determines the text size of the game's title on the bottom-right.
-define -2 gui.title_text_size = 38
+define -2 gui.title_text_size = 50
 
 ## Main Menu and Game Menu
 # These variables set what is shown in the game menu.
