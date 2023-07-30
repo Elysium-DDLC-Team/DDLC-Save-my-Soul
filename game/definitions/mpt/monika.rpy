@@ -3,44 +3,44 @@ image _mon_blink_a:
     renpy.random.randint(20, 100)*0.1
     choice:
         alpha 1.0
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
         paths.monika("eyes", "forward","e4a")
         0.035
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
     choice:
         alpha 1.0
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
         paths.monika("eyes", "forward","e4a")
         0.065
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
     choice:
         alpha 1.0
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
         paths.monika("eyes", "forward","e4a")
         0.095
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
     choice:
         alpha 1.0
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
         paths.monika("eyes", "forward","e4a")
         0.035
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
         alpha 0.0
         0.15
         alpha 1.0
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
         paths.monika("eyes", "forward","e4a")
         0.035
-        "mod_assets/images/monika/blink/_blink_am.png"
+        paths.monika("blink", "blink_am")
         0.015
     repeat
 
@@ -49,44 +49,44 @@ image _mon_blink_l_a:
     renpy.random.randint(30, 60)*0.1
     choice:
         alpha 1.0
-        "mod_assets/images/monika/blink/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
-        "mod_assets/images/monika/blink/_blink_l_af.png"
+        paths.monika("blink", "blink_l_af")
         0.035
-        "mod_assets/images/monika/blink/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
     choice:
         alpha 1.0
-        "mod_assets/MPT/monika/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
-        "mod_assets/MPT/monika/_blink_l_af.png"
+        paths.monika("blink", "blink_l_af")
         0.065
-        "mod_assets/MPT/monika/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
     choice:
         alpha 1.0
-        "mod_assets/MPT/monika/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
-        "mod_assets/MPT/monika/_blink_l_af.png"
+        paths.monika("blink", "blink_l_af")
         0.095
-        "mod_assets/MPT/monika/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
     choice:
         alpha 1.0
-        "mod_assets/MPT/monika/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
-        "mod_assets/MPT/monika/_blink_l_af.png"
+        paths.monika("blink", "blink_l_af")
         0.035
-        "mod_assets/MPT/monika/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
         alpha 0.0
         0.15
         alpha 1.0
-        "mod_assets/MPT/monika/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
-        "mod_assets/MPT/monika/_blink_l_af.png"
+        paths.monika("blink", "blink_l_af")
         0.035
-        "mod_assets/MPT/monika/_blink_l_am.png"
+        paths.monika("blink", "blink_l_am")
         0.015
     repeat
 
