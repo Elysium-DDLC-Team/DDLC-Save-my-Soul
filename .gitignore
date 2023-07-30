@@ -1,0 +1,13 @@
+*.rpyc
+*.rpa
+*.rpymc
+.vscode
+log.txt
+error.txt
+game/cache/*
+game/saves/*
+traceback.txt
+.android.json
+*.chr
+errors.txt
+game/saves/*
