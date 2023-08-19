@@ -5,7 +5,7 @@ init -200 python:
 
     class Paths:
 
-        _base_path = "mod_assets/images"
+        _base_path = "mod_assets/images/characters"
         _file_format = "png"
 
         @dispatch(str, str, str)
