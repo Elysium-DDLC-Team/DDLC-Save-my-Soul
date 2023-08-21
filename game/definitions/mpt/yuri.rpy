@@ -5,12 +5,7 @@ layeredimage yuri turned:
     at AutofocusDisplayable(name="monika", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     always paths.yuri("bases", "turned", "face")
-    
-    #Attributes for autofocus logic.
-    group af_logic multiple:
-        attribute afm null #This attribute controls whether automatic control of the mouths takes place or not.  Add this tag to a character to enable automatic mouth control, remove it to disable it.
-        attribute afz null #This attribute controls whether automatic control of zorder takes place or not.  Add this tag to a character to enable automatic zorder control, remove it to disable it.
-        
+  
     group autofocus_coloring:
         attribute day default null
         attribute dawn null
@@ -399,11 +394,7 @@ layeredimage yuri shy:
     
     always paths.yuri("bases", "shy", "face")
     
-    #Attributes for autofocus logic.
-    group af_logic multiple:
-        attribute afm null #This attribute controls whether automatic control of the mouths takes place or not.  Add this tag to a character to enable automatic mouth control, remove it to disable it.
-        attribute afz null #This attribute controls whether automatic control of zorder takes place or not.  Add this tag to a character to enable automatic zorder control, remove it to disable it.
-    
+
     group outfit:
         
         anchor (0,0) subpixel (True)
