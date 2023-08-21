@@ -437,7 +437,7 @@ layeredimage monika lean:
     
     #This makes the sprite one single texture, instead of multiple textures on top of each other.
     #This fixes certain problems like alpha fadein/fadeout looking strange, at the cost of some performance.
-    at Flatten
+    at AutofocusDisplayable(name="monika", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     group outfit: #These attributes are here only to determine which set of "body" sprites to use later.  "null" is what lets us just use these attributes as logic and nothing else.
         
