@@ -183,7 +183,7 @@ layeredimage natsuki turned:
     
     #This makes the sprite one single texture, instead of multiple textures on top of each other.
     #This fixes certain problems like alpha fadein/fadeout looking strange, at the cost of some performance.
-    at AutofocusDisplayable(name="monika", AutofocusDropShadow_blur=20, AutofocusColoring=True)
+    at AutofocusDisplayable(name="natsuki", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     group autofocus_coloring:
         attribute day default null
@@ -705,7 +705,7 @@ layeredimage natsuki cross:
     
     #This makes the sprite one single texture, instead of multiple textures on top of each other.
     #This fixes certain problems like alpha fadein/fadeout looking strange, at the cost of some performance.
-    at Flatten
+    at AutofocusDisplayable(name="natsuki", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     group outfit:
         attribute uniform default null
