@@ -2,7 +2,7 @@ layeredimage yuri turned:
     
     #This makes the sprite one single texture, instead of multiple textures on top of each other.
     #This fixes certain problems like alpha fadein/fadeout looking strange, at the cost of some performance.
-    at AutofocusDisplayable(name="monika", AutofocusDropShadow_blur=20, AutofocusColoring=True)
+    at AutofocusDisplayable(name="yuri", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     always paths.yuri("bases", "turned", "face")
   
@@ -390,7 +390,7 @@ layeredimage yuri shy:
     
     #This makes the sprite one single texture, instead of multiple textures on top of each other.
     #This fixes certain problems like alpha fadein/fadeout looking strange, at the cost of some performance.
-    at Flatten
+    at AutofocusDisplayable(name="yuri", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     always paths.yuri("bases", "shy", "face")
     
