@@ -2,7 +2,7 @@ layeredimage sayori turned: #turned definitions.
     
     #This makes the sprite one single texture, instead of multiple textures on top of each other.
     #This fixes certain problems like alpha fadein/fadeout looking strange, at the cost of some performance.
-    at AutofocusDisplayable(name="monika", AutofocusDropShadow_blur=20, AutofocusColoring=True)
+    at AutofocusDisplayable(name="sayori", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     always paths.sayori("bases", "turned", "face") #Always need this face.
    
@@ -336,7 +336,7 @@ layeredimage sayori tap: #tapping definitions.
     
     #This makes the sprite one single texture, instead of multiple textures on top of each other.
     #This fixes certain problems like alpha fadein/fadeout looking strange, at the cost of some performance.
-    at Flatten
+    at AutofocusDisplayable(name="sayori", AutofocusDropShadow_blur=20, AutofocusColoring=True)
     
     group outfit:
         attribute uniform default:
