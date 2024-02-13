@@ -1577,3 +1577,7 @@ default sayori_confess = True
 default natsuki_23 = None
 
 default persistent.is_prologue = True
+
+# Custom Movie Screen
+default movielength = 0
+default movieplaying = "None"
