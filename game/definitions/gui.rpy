@@ -118,3 +118,62 @@ image menu_nav:
     "gui/overlay/main_menu.png"
     #recolorize("gui/overlay/main_menu.png", "#ffbde1")
     menu_nav_move
+
+## GUI Transforms
+
+# This transform moves the polka-dot menu background to the upper-left.
+transform menu_bg_move:
+    subpixel True
+    topleft
+    parallel:
+        xoffset 0 yoffset 0
+        linear 4.5 xoffset -150 yoffset -150
+        repeat
+    parallel:
+        ypos 0
+        time 0.65
+        ease_cubic 3.75 ypos -750
+
+# This transform loops the polka-dot moving effect.
+transform menu_bg_loop:
+    subpixel True
+    topleft
+    parallel:
+        xoffset 0 yoffset 0
+        linear 3.0 xoffset -100 yoffset -100
+        repeat
+
+# This transform moves the menu logo down to it's intended placement in-game.
+transform menu_logo_move:
+    subpixel True
+    yoffset -300
+    time 1.925
+    easein_bounce 1.5 yoffset 0
+
+# This transform moves the main menu screen in-game to be visible.
+transform menu_nav_move:
+    subpixel True
+    xoffset -500
+    time 1.5
+    easein_quint 1 xoffset 0
+
+# This transform fades out the main menu screen. 
+transform menu_fadeout:
+    easeout 0.75 alpha 0
+    time 2.481
+    alpha 0.4
+    linear 0.5 alpha 0
+
+# This transform takes in a z-axis, x-axis and zoom numbers and moves the menu
+# sprites to where they appear in the game.
+transform menu_art_move(z, x, z2):
+    subpixel True
+    yoffset 0 + (1200 * z)
+    xoffset (740 - x) * z * 0.5
+    zoom z2 * 0.75
+    time 1.0
+    parallel:
+        ease 1.75 yoffset 0
+    parallel:
+        pause 0.75
+        ease 1.5 zoom z2 xoffset 0
