@@ -19,18 +19,6 @@ init -100 python:
                 if onedrive_path in config.basedir:
                     raise IllegalModLocation
 
-## This init python statement checks if the character files are present in-game
-## and writes them to the characters folder depending on the playthrough.
-init python:
-    if not persistent.do_not_delete:
-        if renpy.android:
-            if not os.path.exists(os.path.join(os.environ['ANDROID_PUBLIC'], "characters")):
-                os.mkdir(os.path.join(os.environ['ANDROID_PUBLIC'], "characters"))
-        else:
-            if not os.path.exists(os.path.join(config.basedir, "characters")):
-                os.mkdir(os.path.join(config.basedir, "characters"))
-        restore_all_characters()
-
 ## These images are the background images shown in-game during the disclaimer.
 image tos = "bg/warning.png"
 image tos2 = "bg/warning2.png"
@@ -43,7 +31,6 @@ default persistent.first_run = False
 
 ## This sets the lockdown check variable to False to show the warning for developers.
 default persistent.lockdown_warning = False
-
 
 label splashscreen:
     #$ renpy.movie_cutscene('mod_assets/movies/splashes/presplash/DDLCSavemySoulPresplashEnglish.webm')
