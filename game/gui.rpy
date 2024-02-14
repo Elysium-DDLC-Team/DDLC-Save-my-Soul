@@ -7,7 +7,7 @@
 ## on line 379
 
 init -2 python:
-    # This sets the resolution of DDLC to 1280x720p
+    # This sets the resolution of DDLC to FullHD resolution
     gui.init(1920, 1080)
 
 ## GUI Sounds
