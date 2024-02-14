@@ -291,6 +291,18 @@ default persistent.first_run = False
 ## This sets the lockdown check variable to False to show the warning for developers.
 default persistent.lockdown_warning = False
 
+
+label splashscreen:
+    #$ renpy.movie_cutscene('mod_assets/movies/splashes/presplash/DDLCSavemySoulPresplashEnglish.webm')
+    #$ renpy.pause(21.0, hard=True)
+    if persistent.is_prologue == False:
+        $ movielength = 21.0     # The length of your movie.
+        $ movieplaying = "mod_assets/movies/splashes/presplash/DDLCSavemySoulPresplashEnglish.webm"    # The name and file path of your movie.
+        call screen custommoviescreen with dissolve   # calling the screen
+
+        return
+
+
 ## Startup Disclaimer
 ## This label calls the disclaimer screen that appears when the game starts.
 # label splashscreen:
@@ -529,10 +541,10 @@ default persistent.lockdown_warning = False
 
 ## This label is a left-over from DDLC's development that hides the Team Salvato
 ## logo and shows the splash message.
-label warningscreen:
-    hide intro
-    show warning
-    pause 3.0
+#label warningscreen:
+#    hide intro
+#    show warning
+#    pause 3.0
 
 ## This label is used when 'monika.chr' is deleted when the game starts Day 1 of
 ## Act 1. This feature has been commented out for mod safety reasons but can be
