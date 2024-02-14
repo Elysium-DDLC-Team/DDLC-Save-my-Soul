@@ -7,18 +7,6 @@
 # Note: For building a mod for PC/Android, you must keep the DDLC RPAs 
 # and decompile them for the builds to work.
 
-init -100 python:
-    if not renpy.android:
-        # for archive in ['audio','images','fonts']:
-        #     if archive not in config.archives:
-        #         raise DDLCRPAsMissing(archive)
-
-        if renpy.windows:
-            onedrive_path = os.environ.get("OneDrive")
-            if onedrive_path is not None:
-                if onedrive_path in config.basedir:
-                    raise IllegalModLocation
-
 ## These images are the background images shown in-game during the disclaimer.
 image tos = "bg/warning.png"
 image tos2 = "bg/warning2.png"
