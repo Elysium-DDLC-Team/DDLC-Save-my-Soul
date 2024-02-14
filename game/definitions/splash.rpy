@@ -19,40 +19,6 @@ init -100 python:
                 if onedrive_path in config.basedir:
                     raise IllegalModLocation
 
-## Splash Message
-# This python statement is where the splash messages reside in.
-init python:
-    # This variable is the default splash message that people will see when
-    # the game launches.
-    splash_message_default = "This game is an unofficial fan game that is unaffiliated with Team Salvato."
-    # This array variable stores different kinds of splash messages you can use
-    # to show to the player on startup.
-    splash_messages = [
-        "Please support Doki Doki Literature Club.",
-        "Monika is watching you code."
-    ]
-
-    ### New in 3.0.0
-    ## This recolor function allows you to recolor the GUI of DDLC easily without replacing
-    ## the in-game assets.
-    ##
-    ## Syntax to use: recolorize("path/to/your/image", "#color1hex", "#color2hex", contrast value)
-    ## Example: recolorize("gui/menu_bg.png", "#bdfdff", "#e6ffff", 1.25)
-    def recolorize(path, blackCol="#ffbde1", whiteCol="#ffe6f4", contr=1.29):
-        return im.MatrixColor(im.MatrixColor(im.MatrixColor(path, im.matrix.desaturate() * im.matrix.contrast(contr)), 
-            im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), im.matrix.desaturate() * im.matrix.colorize(blackCol, whiteCol))
-
-    def process_check(stream_list):
-        if not renpy.windows:
-            for index, process in enumerate(stream_list):
-                stream_list[index] = process.replace(".exe", "")
-        
-        for x in stream_list:
-            for y in process_list:
-                if re.match(r"^" + x + r"\b", y):
-                    return True
-        return False
-
 # This image text shows the splash message when the game loads.
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
 
