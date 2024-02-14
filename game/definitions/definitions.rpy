@@ -1581,3 +1581,6 @@ default persistent.is_prologue = True
 # Custom Movie Screen
 default movielength = 0
 default movieplaying = "None"
+
+# Original splashscreen messages
+default persistent.splash_default = "This game is an unofficial fan game that is unaffiliated with Team Salvato."

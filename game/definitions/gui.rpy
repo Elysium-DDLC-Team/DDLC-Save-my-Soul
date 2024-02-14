@@ -119,6 +119,27 @@ image menu_nav:
     #recolorize("gui/overlay/main_menu.png", "#ffbde1")
     menu_nav_move
 
+## Team Salvato Splash Screen
+# This image stores the Tean Salvato logo image that appears when the game starts.
+image intro:
+    truecenter
+    "white"
+    0.5
+    "bg/splash.png" with Dissolve(0.5, alpha=True)
+    2.5
+    "white" with Dissolve(0.5, alpha=True)
+    0.5
+
+# This image is a left over from DDLC's development that shows the splash message
+# when the game starts.
+image warning:
+    truecenter
+    "white"
+    "splash_warning" with Dissolve(0.5, alpha=True)
+    2.5
+    "white" with Dissolve(0.5, alpha=True)
+    0.5
+
 ## GUI Transforms
 
 # This transform moves the polka-dot menu background to the upper-left.
