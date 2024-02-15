@@ -187,7 +187,7 @@ style pref_label:
     bottom_margin 2
 
 style pref_label_text:
-    font"gui/font/RifficFree-Bold.ttf"
+    font "mod_assets/fonts/Roboto/Roboto-Medium.ttf"
     size 36
     color "#fff"
     outlines [(3, text_outline_color, 0, 0), (1, text_outline_color, 1, 1)]
@@ -206,7 +206,7 @@ style radio_button:
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
-    font "gui/font/Aller_Rg.ttf"
+    font "mod_assets/fonts/Roboto/Roboto-Medium.ttf"
     outlines []
 
 style check_vbox:
@@ -218,7 +218,7 @@ style check_button:
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
-    font "gui/font/Aller_Rg.ttf"
+    font "mod_assets/fonts/Roboto/Roboto-Medium.ttf"
     outlines []
 
 style slider_slider:

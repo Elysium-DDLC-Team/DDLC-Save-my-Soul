@@ -68,12 +68,13 @@ style navigation_button:
     properties gui.button_properties("navigation_button")
     hover_sound gui.hover_sound
     activate_sound gui.activate_sound
+    hover_background hover_button_bg
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
-    font "gui/font/RifficFree-Bold.ttf"
-    color "#fff"
-    outlines [(4, text_outline_color, 0, 0), (2, text_outline_color, 2, 2)]
+    font button_font
+    color button_text_color
+    outlines button_text_outlines
     #outlines [(4, "#b59", 0, 0), (2, "#b59", 2, 2)]
-    hover_outlines [(4, "#fac", 0, 0), (2, "#fac", 2, 2)]
-    insensitive_outlines [(4, "#fce", 0, 0), (2, "#fce", 2, 2)]
+    #hover_outlines hover_button_outlines
+    #insensitive_outlines button_insensitive_outlines

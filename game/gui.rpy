@@ -6,6 +6,11 @@
 ## NOTE: To configure settings for Android, scroll down to the init python block
 ## on line 379
 
+# Early Defining variables
+
+define -2 gui.hover_sound = ""
+define -2 gui.activate_sound = ""
+
 init -2 python:
     # This sets the resolution of DDLC to FullHD resolution
     gui.init(1920, 1080)
@@ -13,12 +18,29 @@ init -2 python:
 ## GUI Sounds
 # These variables set the sound effects for the GUI elements in the game.
 
-if persistent.is_prologue == True:
-    define -2 gui.hover_sound = "gui/sfx/hover.ogg" # Hover Sound Effect
-    define -2 gui.activate_sound = "gui/sfx/select.ogg" # Click Sound Effect
-else
-    define -2 gui.hover_sound = "mod_assets/audio/sfx/ui/menu/ui_menu_hover.wav" # Hover Sound Effect
-    define -2 gui.activate_sound = "mod_assets/audio/sfx/ui/menu/ui_menu_onpress.wav" # Click Sound Effect
+init -2 python:
+    if persistent.is_prologue == True:
+        gui.hover_sound = "gui/sfx/hover.ogg" # Hover Sound Effect
+        gui.activate_sound = "gui/sfx/select.ogg" # Click Sound Effect
+        main_menu_bg = "gui/overlay/main_menu.png"
+        game_menu_bg = ""
+        hover_button_bg = ""
+        button_font = "mod_assets/fonts/Roboto/Roboto-Medium.ttf"
+        button_text_color = "#fff"
+        button_text_outlines = "[(4, text_outline_color, 0, 0), (2, text_outline_color, 2, 2)]"
+        hover_button_outlines = "[(4, "#fac", 0, 0), (2, "#fac", 2, 2)]"
+        button_insensitive_outlines = "[(4, "#fce", 0, 0), (2, "#fce", 2, 2)]"
+    elif persistent.is_prologue == False:
+        gui.hover_sound = "mod_assets/audio/sfx/ui/menu/ui_menu_hover.wav" # Hover Sound Effect
+        gui.activate_sound = "mod_assets/audio/sfx/ui/menu/ui_menu_onpress.wav" # Click Sound Effect
+        main_menu_bg = "mod_assets/images/ui/main_menu/Background_MainMenu.png"
+        game_menu_bg = ""
+        hover_button_bg = "mod_assets/images/ui/main_menu/buttons/hover_background.png"
+        button_font = "mod_assets/fonts/Rajdhani/Rajdhani-Medium.ttf"
+        button_text_color = "#f75049"
+        button_text_outlines = ""
+        hover_button_outlines = ""
+        button_insensitive_outlines = ""
 
 ## Colors!
 # These variables set the color for DDLC's text in-game.
@@ -55,13 +77,13 @@ define -2 gui.interface_text_color = '#ffffff'
 # These variables set the font and its' size for DDLC's text in-game.
 
 # This font is used for in-game text.
-define -2 gui.default_font = "gui/font/Aller_Rg.ttf"
+define -2 gui.default_font = "mod_assets/fonts/Roboto/Roboto-Medium.ttf"
 
 # This font is used for character names.
-define -2 gui.name_font = "gui/font/RifficFree-Bold.ttf"
+define -2 gui.name_font = "mod_assets/fonts/Roboto/Roboto-Medium.ttf"
 
 # This font is used for out-of-game text.
-define -2 gui.interface_font = "gui/font/Aller_Rg.ttf"
+define -2 gui.interface_font = "mod_assets/fonts/Roboto/Roboto-Medium.ttf"
 
 # The text size of normal dialogue text.
 define -2 gui.text_size = 36
@@ -70,7 +92,7 @@ define -2 gui.text_size = 36
 define -2 gui.name_text_size = 36
 
 # This determines the text size of the game's user interface.
-define -2 gui.interface_text_size = 36
+define -2 gui.interface_text_size = 28
 
 # This determines the text size of the game's label in the user interface.
 define -2 gui.label_text_size = 42

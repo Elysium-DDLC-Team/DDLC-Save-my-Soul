@@ -32,8 +32,12 @@ label splashscreen:
         return
 
 label before_main_menu:
-    $ config.main_menu_music = audio.t1
-    return
+    if persistent.is_prologue == True:
+        $ config.main_menu_music = audio.t1
+        return
+    elif persistent.is_prologue == False:
+        $ config.main_menu_music = audio.ea
+        return
 
 default persistent.is_theme_default = True
 default persistent.theme_value = 0.0

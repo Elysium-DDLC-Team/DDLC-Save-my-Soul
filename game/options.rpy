@@ -37,7 +37,13 @@ define config.has_voice = False
 
 # This configures what music will play when you launch your mod and in the 
 # main menu.
-define config.main_menu_music = audio.t1
+init python:
+    if persistent.is_prologue == True:
+        config.main_menu_music = audio.t1
+        config.window_icon = "mod_assets/logo_prologue.png"
+    elif persistent.is_prologue == False:
+        config.main_menu_music = audio.ea
+        config.window_icon = "mod_assets/logo.png"
 
 # These variables control the transition effects of DDLC when entering and exiting
 # a menu.
@@ -82,14 +88,6 @@ default preferences.sfx_volume = 0.75
 #   macOS: $HOME/Library/RenPy/ (Un-hide the Library Folder)
 #   Linux: $HOME/.renpy/
 define config.save_directory = "DDLC_Save_me_Soul"
-
-# This controls the window logo of your mod.
-init python: 
-    
-    if persistent.is_prologue is True:
-        config.window_icon = "mod_assets/logo_prologue.png"
-    else:
-        config.window_icon = "mod_assets/logo.png"
 
 # This controls whether your mod allows the player to skip dialogue.
 define config.allow_skipping = True

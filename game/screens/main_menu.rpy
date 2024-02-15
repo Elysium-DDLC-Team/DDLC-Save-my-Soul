@@ -10,14 +10,20 @@ screen main_menu():
     tag menu
 
     style_prefix "main_menu"
-
+    
     add "menu_bg"
+
     frame
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
-    add "menu_logo"
+    
+    if persistent.is_prologue == True:   
+        add "menu_logo_prologue"
+    else:
+        add "menu_logo"
+
     add "menu_fade"
 
     if gui.show_name:
@@ -43,8 +49,7 @@ style main_menu_version is main_menu_text:
 style main_menu_frame:
     xsize 310
     yfill True
-
-    background "menu_nav"
+    background main_menu_bg
 
 style main_menu_vbox:
     xalign 1.0

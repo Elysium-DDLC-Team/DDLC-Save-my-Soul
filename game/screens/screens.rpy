@@ -334,12 +334,12 @@ screen choice(items):
                     $ arg1 = kwarg[0]
                     $ arg2 = kwarg[-1]
                     
-                    textbutton caption:
-                        idle_background Frame(im.MatrixColor(im.MatrixColor("gui/button/choice_idle_background.png", im.matrix.desaturate() * im.matrix.contrast(1.29) * im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), 
-                            im.matrix.desaturate() * im.matrix.colorize(arg1, arg2)), gui.choice_button_borders)
-                        hover_background Frame(im.MatrixColor(im.MatrixColor("gui/button/choice_hover_background.png", im.matrix.desaturate() * im.matrix.contrast(1.29) * im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), 
-                            im.matrix.desaturate() * im.matrix.colorize(arg1, "#fff")), gui.choice_button_borders)
-                        action i.action
+                    # textbutton caption:
+                    #     idle_background Frame(im.MatrixColor(im.MatrixColor("gui/button/choice_idle_background.png", im.matrix.desaturate() * im.matrix.contrast(1.29) * im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), 
+                    #         im.matrix.desaturate() * im.matrix.colorize(arg1, arg2)), gui.choice_button_borders)
+                    #     hover_background Frame(im.MatrixColor(im.MatrixColor("gui/button/choice_hover_background.png", im.matrix.desaturate() * im.matrix.contrast(1.29) * im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), 
+                    #         im.matrix.desaturate() * im.matrix.colorize(arg1, "#fff")), gui.choice_button_borders)
+                    #     action i.action
 
                 else:
 

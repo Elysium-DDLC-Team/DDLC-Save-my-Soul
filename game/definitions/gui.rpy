@@ -9,6 +9,15 @@ image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign
 # the menu character sprites and main menu/pause menu screen images.
 
 # This image shows the DDLC logo in the normal DDLC position.
+image menu_logo_prologue:
+    "mod_assets/logo_prologue.png"
+    # im.Composite((512, 512), (0, 0), recolorize("mod_assets/logo_bg.png"), (0, 0), "mod_assets/logo_fg.png")
+    subpixel True
+    xcenter 240
+    ycenter 120
+    zoom 0.60
+    menu_logo_move
+
 image menu_logo:
     "mod_assets/logo.png"
     # im.Composite((512, 512), (0, 0), recolorize("mod_assets/logo_bg.png"), (0, 0), "mod_assets/logo_fg.png")
@@ -17,13 +26,18 @@ image menu_logo:
     ycenter 120
     zoom 0.60
     menu_logo_move
-
+    
 # This image shows the main menu polka-dot image.
-image menu_bg:
+image menu_bg_prologue:
     topleft
     "gui/menu_bg.png"
     # recolorize("gui/menu_bg.png", "#ffdbf0", "#fff", 1)
     menu_bg_move
+
+image menu_bg:
+    topleft
+    "mod_assets/images/backgrounds/Ezekiel_cyberpunk_city_night_neon_raining_future_anime_backgrou_99901bc1-70c9-4b8e-ab16-5f8e325bb55d.png"
+    # recolorize("gui/menu_bg.png", "#ffdbf0", "#fff", 1)
 
 # This image shows the pause menu polka-dot image.
 image game_menu_bg:
@@ -114,10 +128,14 @@ image menu_art_s_glitch:
     menu_art_move(.8, 470, .8)
 
 # This image shows the main menu screen in the main/pause menu.
-image menu_nav:
+image menu_nav_prologue:
     "gui/overlay/main_menu.png"
     #recolorize("gui/overlay/main_menu.png", "#ffbde1")
     menu_nav_move
+
+image menu_nav:
+    "game/mod_assets/images/ui/main_menu/Background_MainMenu.png"
+    #recolorize("gui/overlay/main_menu.png", "#ffbde1")
 
 ## Team Salvato Splash Screen
 # This image stores the Tean Salvato logo image that appears when the game starts.
