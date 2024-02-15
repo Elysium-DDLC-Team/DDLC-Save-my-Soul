@@ -12,9 +12,13 @@ init -2 python:
 
 ## GUI Sounds
 # These variables set the sound effects for the GUI elements in the game.
-define -2 gui.hover_sound = "gui/sfx/hover.ogg" # Hover Sound Effect
-define -2 gui.activate_sound = "gui/sfx/select.ogg" # Click Sound Effect
-define -2 gui.activate_sound_glitch = "gui/sfx/select_glitch.ogg" # Glitched Sound Effect
+
+if persistent.is_prologue == True:
+    define -2 gui.hover_sound = "gui/sfx/hover.ogg" # Hover Sound Effect
+    define -2 gui.activate_sound = "gui/sfx/select.ogg" # Click Sound Effect
+else
+    define -2 gui.hover_sound = "mod_assets/audio/sfx/ui/menu/ui_menu_hover.wav" # Hover Sound Effect
+    define -2 gui.activate_sound = "mod_assets/audio/sfx/ui/menu/ui_menu_onpress.wav" # Click Sound Effect
 
 ## Colors!
 # These variables set the color for DDLC's text in-game.
