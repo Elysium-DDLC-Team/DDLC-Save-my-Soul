@@ -3,7 +3,7 @@
 # This file defines the placements and animations in DDLC.
 
 # This transform sizes the character properly at the given X position.
-transform tcommon(x=960, z=0.50):
+transform tcommon(x=640, z=0.80):
     yanchor 1.0 subpixel True
     on show:
         ypos 1.03
@@ -18,11 +18,11 @@ transform tcommon(x=960, z=0.50):
         parallel:
             easein .15 yoffset 0 ypos 1.03
 
-transform tinstant(x=960, z=0.60):
+transform tinstant(x=640, z=0.80):
     xcenter x yoffset 0 zoom z*1.00 alpha 1.00 yanchor 1.0 ypos 1.03
 
 # This transform makes the character zoom in when they talk.
-transform focus(x=960, z=0.60):
+transform focus(x=640, z=0.80):
     yanchor 1.0 ypos 1.03 subpixel True
     on show:
 
@@ -38,31 +38,31 @@ transform focus(x=960, z=0.60):
             easein .15 yoffset 0
 
 # This transform causes the character to sink down on the screen.
-transform sink(x=960, z=0.60):
+transform sink(x=640, z=0.80):
     xcenter x yoffset 0 yanchor 1.0 ypos 1.03 zoom z*1.00 alpha 1.00 subpixel True
     easein .5 ypos 1.06
 
 # This transform makes the character jump for a bit
-transform hop(x=960, z=0.60):
+transform hop(x=640, z=0.80):
     xcenter x yoffset 0 yanchor 1.0 ypos 1.03 zoom z*1.00 alpha 1.00 subpixel True
     easein .1 yoffset -20
     easeout .1 yoffset 0
 
 # This transform makes the character jump and be in focus at the same time.
-transform hopfocus(x=960, z=0.60):
+transform hopfocus(x=640, z=0.80):
     xcenter x yoffset 0 yanchor 1.0 ypos 1.03 zoom z*1.05 alpha 1.00 subpixel True
     easein .1 yoffset -21
     easeout .1 yoffset 0
 
 # This causes the character to sink down from the screen then come back up.
-transform dip(x=960, z=0.60):
+transform dip(x=640, z=0.80):
     xcenter x yoffset 0 yanchor 1.0 ypos 1.03 zoom z*1.00 alpha 1.00 subpixel True
     easein .25 yoffset 25
     easeout .25 yoffset 0
 
 # This transform causes the character to wobble on-screen.
 # This might be a left-over transform from DDLC's development for Natsuki's Closet CG.
-transform panic(x=960, z=0.60):
+transform panic(x=640, z=0.80):
     xcenter x yoffset 0 yanchor 1.0 ypos 1.03 zoom z*1.00 alpha 1.00 subpixel True
     parallel:
         ease 1.2 yoffset 25
@@ -108,206 +108,206 @@ transform rhide:
 # how many characters are on screen and which character number they are.
 #     Example for Monika with 2 other girls; being in between them: t32
 transform t41:
-    tcommon(300)
+    tcommon(200)
 transform t42:
-    tcommon(740)
+    tcommon(493)
 transform t43:
-    tcommon(1179)
+    tcommon(786)
 transform t44:
-    tcommon(1620)
+    tcommon(1080)
 transform t31:
-    tcommon(360)
+    tcommon(240)
 transform t32:
-    tcommon(960)
+    tcommon(640)
 transform t33:
-    tcommon(1560)
+    tcommon(1040)
 transform t21:
-    tcommon(600)
+    tcommon(400)
 transform t22:
-    tcommon(1320)
+    tcommon(880)
 transform t11:
-    tcommon(960)
+    tcommon(640)
 
 # These transforms makes the character pop in.
 transform i41:
-    tinstant(300)
+    tinstant(200)
 transform i42:
-    tinstant(740)
+    tinstant(493)
 transform i43:
-    tinstant(1179)
+    tinstant(786)
 transform i44:
-    tinstant(1620)
+    tinstant(1080)
 transform i31:
-    tinstant(360)
+    tinstant(240)
 transform i32:
-    tinstant(960)
+    tinstant(640)
 transform i33:
-    tinstant(1560)
+    tinstant(1040)
 transform i21:
-    tinstant(600)
+    tinstant(400)
 transform i22:
-    tinstant(1320)
+    tinstant(880)
 transform i11:
-    tinstant(960)
+    tinstant(640)
 
 # These transforms makes the character be the main focus on-screen.
 transform f41:
-    focus(300)
+    focus(200)
 transform f42:
-    focus(740)
+    focus(493)
 transform f43:
-    focus(1179)
+    focus(786)
 transform f44:
-    focus(1620)
+    focus(1080)
 transform f31:
-    focus(360)
+    focus(240)
 transform f32:
-    focus(960)
+    focus(640)
 transform f33:
-    focus(1560)
+    focus(1040)
 transform f21:
-    focus(600)
+    focus(400)
 transform f22:
-    focus(1320)
+    focus(880)
 transform f11:
-    focus(960)
+    focus(640)
 
 # These transforms makes the character sink downwards.
 transform s41:
-    sink(300)
+    sink(200)
 transform s42:
-    sink(740)
+    sink(493)
 transform s43:
-    sink(1179)
+    sink(786)
 transform s44:
-    sink(1620)
+    sink(1080)
 transform s31:
-    sink(360)
+    sink(240)
 transform s32:
-    sink(960)
+    sink(640)
 transform s33:
-    sink(1560)
+    sink(1040)
 transform s21:
-    sink(600)
+    sink(400)
 transform s22:
-    sink(1320)
+    sink(880)
 transform s11:
-    sink(960)
+    sink(640)
 
 # These transforms makes the character hop.
 transform h41:
-    hop(300)
+    hop(200)
 transform h42:
-    hop(740)
+    hop(493)
 transform h43:
-    hop(1179)
+    hop(786)
 transform h44:
-    hop(1620)
+    hop(1080)
 transform h31:
-    hop(360)
+    hop(240)
 transform h32:
-    hop(960)
+    hop(640)
 transform h33:
-    hop(1560)
+    hop(1040)
 transform h21:
-    hop(600)
+    hop(400)
 transform h22:
-    hop(1320)
+    hop(880)
 transform h11:
-    hop(960)
+    hop(640)
 
 # These transforms makes the character hop and be in focus at the same time.
 transform hf41:
-    hopfocus(300)
+    hopfocus(200)
 transform hf42:
-    hopfocus(740)
+    hopfocus(493)
 transform hf43:
-    hopfocus(1179)
+    hopfocus(786)
 transform hf44:
-    hopfocus(1620)
+    hopfocus(1080)
 transform hf31:
-    hopfocus(360)
+    hopfocus(240)
 transform hf32:
-    hopfocus(960)
+    hopfocus(640)
 transform hf33:
-    hopfocus(1560)
+    hopfocus(1040)
 transform hf21:
-    hopfocus(600)
+    hopfocus(400)
 transform hf22:
-    hopfocus(1320)
+    hopfocus(880)
 transform hf11:
-    hopfocus(960)
+    hopfocus(640)
 
 # These transforms makes the character dip down the screen, then come back up.
 transform d41:
-    dip(300)
+    dip(200)
 transform d42:
-    dip(740)
+    dip(493)
 transform d43:
-    dip(1179)
+    dip(786)
 transform d44:
-    dip(1620)
+    dip(1080)
 transform d31:
-    dip(360)
+    dip(240)
 transform d32:
-    dip(960)
+    dip(640)
 transform d33:
-    dip(1560)
+    dip(1040)
 transform d21:
-    dip(600)
+    dip(400)
 transform d22:
-    dip(1320)
+    dip(880)
 transform d11:
-    dip(960)
+    dip(640)
 
 # These transforms makes the character fly in from the left.
 transform l41:
-    leftin(300)
+    leftin(200)
 transform l42:
-    leftin(740)
+    leftin(493)
 transform l43:
-    leftin(1179)
+    leftin(786)
 transform l44:
-    leftin(1620)
+    leftin(1080)
 transform l31:
-    leftin(360)
+    leftin(240)
 transform l32:
-    leftin(960)
+    leftin(640)
 transform l33:
-    leftin(1560)
+    leftin(1040)
 transform l21:
-    leftin(600)
+    leftin(400)
 transform l22:
-    leftin(1320)
+    leftin(880)
 transform l11:
-    leftin(960)
+    leftin(640)
 
 # These transforms makes the character fly in from the right.
 transform r41:
-    rightin(300)
+    rightin(200)
 transform r42:
-    rightin(740)
+    rightin(493)
 transform r43:
-    rightin(1179)
+    rightin(786)
 transform r44:
-    rightin(1620)
+    rightin(1080)
 transform r31:
-    rightin(360)
+    rightin(240)
 transform r32:
-    rightin(960)
+    rightin(640)
 transform r33:
-    rightin(1560)
+    rightin(1040)
 transform r21:
-    rightin(600)
+    rightin(400)
 transform r22:
-    rightin(1320)
+    rightin(880)
 transform r11:
-    rightin(960)
+    rightin(640)
 
 # This transform acts as in your eyes are opening up to see where you are at.
-transform face(z=0.60, y=850):
+transform face(z=0.80, y=500):
     subpixel True
-    xcenter 960
+    xcenter 640
     yanchor 1.0 ypos 1.03
     yoffset y
     zoom z*2.00

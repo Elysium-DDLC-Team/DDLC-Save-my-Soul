@@ -6,14 +6,14 @@
 # This file customizes what your mod is and and how it starts and builds!
 
 # This controls what your mod is called.
-define config.name = "DDLC: Save my Soul"
+define config.name = "DDLC Mod Template – Python 3 Edition"
 
 # This controls whether you want your mod name to show in the main menu.
 # If your mod name is big, it is suggested to turn this off.
 define gui.show_name = True
 
 # This controls the version number of your mod.
-define config.version = "0.0.1"
+define config.version = "4.2.3–Py3"
 
 # This adds information about your mod in the About screen.
 # DDLC does not have a 'About' screen so you can leave this blank.
@@ -24,7 +24,7 @@ define gui.about = _("")
 # Note:
 #   The build name is ASCII only so no numbers, spaces, or semicolons.
 #   Example: Doki Doki Yuri Time to DokiDokiYuriTime
-define build.name = "DDLC_Save_me_Soul"
+define build.name = "DDLCModTemplateTwo-Py3"
 
 # This configures whether your mod has sound effects.
 define config.has_sound = True
@@ -81,15 +81,10 @@ default preferences.sfx_volume = 0.75
 #   Windows: %AppData%/RenPy/
 #   macOS: $HOME/Library/RenPy/ (Un-hide the Library Folder)
 #   Linux: $HOME/.renpy/
-define config.save_directory = "DDLC_Save_me_Soul"
+define config.save_directory = "DDLCModTemplateTwo-Py3"
 
 # This controls the window logo of your mod.
-init python: 
-    
-    if persistent.is_prologue is True:
-        config.window_icon = "mod_assets/logo_prologue.png"
-    else:
-        config.window_icon = "mod_assets/logo.png"
+define config.window_icon = "gui/window_icon.png"
 
 # This controls whether your mod allows the player to skip dialogue.
 define config.allow_skipping = True
