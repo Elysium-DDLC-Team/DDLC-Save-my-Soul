@@ -1,0 +1,29 @@
+Feature: Coloring
+
+Will color the character's sprites in accordance to the attributes given.
+
+
+This feature can be turned on / off with the store variable `AutofocusStore.autofocus_coloring`.
+
+
+The different colors are defined in the class variable 'matrix_map'.
+Each color is mapped by an attribute name that should be added to your layeredimages as followed:
+
+group autofocus_coloring:
+    attribute day default null
+    attribute dawn null
+    attribute sunset null
+    ...
+
+and so on with every matrix defined.
+
+
+to use it in game, just show the character with one of the attribute in the aformentionned group
+ie
+
+show eileen dawn
+
+as simple as that
+
+
+If the version of Ren'Py is prior to 7.4.0, then this feature will automatically be disabled, as the ATL property 'matrixcolor' has yet to be implemented.
