@@ -8,7 +8,7 @@
 
 init -2 python:
     # This sets the resolution of DDLC to 1280x720p
-    gui.init(1280, 720)
+    gui.init(1920, 1080)
 
 ## GUI Sounds
 # These variables set the sound effects for the GUI elements in the game.
